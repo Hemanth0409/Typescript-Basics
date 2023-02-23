@@ -1,0 +1,54 @@
+Introduction
+-------------
+TypeScript is a superset of JavaScript. 
+Superset means that it adds features on top of what JavaScript offers. 
+TypeScript takes all the functionalities and structures JavaScript provides as a language, and adds a few things to that.
+
+The main thing TypeScript provides is static typing. 
+So to truly understand what this means, we first need to understand what types are. 
+
+About Types
+-----------
+In a programming language, types refer to the kind or type of information a given program stores. 
+Information or data can be classified as different types depending on its content.
+Programming languages usually have built in data types. 
+In JavaScript, there are six basic data types which can be divided into three main categories:
+
+Primitive data types
+Composite data types
+Special data types
+
+String, Number, and Boolean are primitive data types.
+Object, Array, and Function (which are all types of objects) are composite data types.
+Whereas Undefined and Null are special data types.
+
+Primitive data types can hold only one value at a time, 
+whereas composite data types can hold collections of values and more complex entities.
+
+What's the Deal with Types and JavaScript?
+---------------------------------------------
+Now that we have a clear idea of what types are, 
+we can start discussing how this works with JavaScript – 
+and why something like TypeScript would even be needed in the first place.
+
+The thing is that JavaScript is a loosely typed and dynamic language.
+This means that in JavaScript, variables are not directly associated with 
+any particular value type, and any variable can be assigned (and re-assigned) 
+values of all types.
+
+See the following example:
+
+let num = 123; // num is now a number
+num = "John";  // num is now a string
+num = true;   // num is now a boolean
+
+You can see how we can change the content and type of the variable with no problem at all.
+This was done by design at the creation of JavaScript, 
+since it was meant to be a scripting language friendly to both programmers and 
+designers and used only to add functionality to websites.
+
+But JavaScript grew a lot with the years and started to be used not only to add 
+simple functionality to websites, but to build huge applications, too. 
+And when building huge applications, dynamic types can lead to silly bugs in the code base.
+
+Example in demo.js -> Why TypeScript
