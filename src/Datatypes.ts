@@ -218,8 +218,10 @@ console.log(json2);
 // functions & type aliases that don't need to explicitly define the types that they use.
 // Generics makes it easier to write reusable code.
 
-function createPair<S, T>(v1: S, v2: T): [S, T] {
+//function add(num1:number,num2:number)
+function createPair<A, B>(v1: A, v2: B): [A, B] {
     return [v1, v2];
   }
   
-  console.log(createPair<string, number>('John', 30)); // ['hello', 42]
+  console.log(createPair<string, number>('John', 30));
+  console.log(createPair<string, string>('John', 'Johnny')); // ['hello', 42]

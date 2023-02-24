@@ -70,12 +70,12 @@ console.log(fruits); //example for mistyping
 //9. Mistyping age as ahe is not considered an error in JavaScript, 
 //but it would have been caught in TypeScript.
 //Mistyping example
-let guy = {
-    name: 'Mario',
-    age: 56
+let details = {
+    name: 'John',
+    age: 36
 };
-//console.log(guy.name + ' is ' + guy.ahe + ' years old.');//Property 'ahe' does not exist on type '{ name: string; age: number; }'.ts(2339)
-console.log(guy.name + ' is ' + guy.age + ' years old.');
+//console.log(details.name + ' is ' + details.ahe + ' years old.');//Property 'ahe' does not exist on type '{ name: string; age: number; }'.ts(2339)
+console.log(details.name + ' is ' + details.age + ' years old.');
 // 10.JSON or JavaScript Object Notation is an open standard file format used for transferring data. 
 // Parsing JSON data is really easy in Javascript or Typescript. 
 // Typescript doesn’t have any different methods for JSON parsing. 
@@ -135,7 +135,9 @@ console.log(json2);
 // 11. Generics allow creating 'type variables' which can be used to create classes, 
 // functions & type aliases that don't need to explicitly define the types that they use.
 // Generics makes it easier to write reusable code.
+//function add(num1:number,num2:number)
 function createPair(v1, v2) {
     return [v1, v2];
 }
-console.log(createPair('John', 30)); // ['hello', 42]
+console.log(createPair('John', 30));
+console.log(createPair('John', 'Johnny')); // ['hello', 42]
